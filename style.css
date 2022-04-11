@@ -68,7 +68,7 @@ body{
     line-height: 80px;
 }
 
-.ulNav{
+.ullNav{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -91,11 +91,12 @@ body{
     padding: 0 20px;
     line-height: 60px;
     display: none;
+    cursor: pointer;
 }
 
 @media (max-width: 768px){
     body{
-        padding-top: 70px;
+        padding-top: 90px;
     }
 
     .header{
@@ -110,7 +111,7 @@ body{
         margin: 0 0 50px 0;
     }
 
-    .ulNav{
+    .ullNav{
         flex-direction: column;
         margin-right: 20px;
         background-color: var(--main-gris-Claro);
@@ -123,7 +124,8 @@ body{
         padding: 0;
         overflow-y: auto;
         justify-content: space-around; 
-        
+        left: 100%;
+        transition: left 0.8s;
     }
 
     .h1Nav{
@@ -132,7 +134,18 @@ body{
         align-items: center;
     }
 
-    
+    .navToggle{
+        display: block;
+    }
+    .ullNav_visible{
+        left: 0;
+    }
 
 
+}
+
+@media (max-width: 350px){
+    .h1Nav{
+        display: none;
+    }
 }
