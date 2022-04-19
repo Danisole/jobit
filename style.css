@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 :root{
 --main-gris-Claro: #e6e6e6;  
@@ -12,16 +13,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 90px 20px 0;
-
+    background-color: var(--main-gris-Claro);
 }
+
+/*barra de navegacion*/
+
 .h1Nav{
     color: var(--main-stronge-orange);
     line-height: 60px;
+    font-family: 'Russo One', sans-serif;
 }
 
 .header{
@@ -31,6 +37,7 @@ body{
     left: 0;
     height: 80px;
     width: 100%;
+    z-index: 999;
     
 }
 
@@ -54,7 +61,7 @@ body{
 
 .nav-link{
     text-decoration: none;
-    color: black;
+    color: var(--main-gris-ocuro);
     height: 60px;
 }
 
@@ -78,7 +85,7 @@ body{
 } 
 
 .navMenuItems{
-    font-size: 15px;
+    font-size: 18px;
     line-height: 80px;
     text-transform: uppercase;
     gap: 20px;
@@ -93,6 +100,14 @@ body{
     line-height: 60px;
     display: none;
     cursor: pointer;
+}
+
+/*carrusel*/
+
+.carousel img {
+    
+    height: 65vh;
+    width: 100%;
 }
 
 @media (max-width: 768px){
