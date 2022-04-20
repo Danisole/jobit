@@ -106,8 +106,48 @@ body{
 
 .carousel img {
     
-    height: 65vh;
+    height: auto;
     width: 100%;
+}
+/*buscador*/
+
+.searchContainer{
+    background-color: var(--main-gris-ocuro);
+    width: auto;
+    height: 300px;
+    color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    
+}
+.searchSpan{
+    color: var(--main-stronge-orange);
+    font-size: 30px;
+}
+
+.searchInput{
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px 0;
+    border-color: var(--main-stronge-orange);
+}
+.searchButton{
+    width: 150px;
+    border-radius: 6px;
+    background-color: var(--main-stronge-orange);
+
+}
+
+.containTop{
+    height: 400px;
+    background: linear-gradient(to bottom,#0361A0, var(--main-light-blue));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 @media (max-width: 768px){
