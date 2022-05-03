@@ -3,7 +3,7 @@
 
 :root{
 --main-gris-Claro: #e6e6e6;  
---main-gris-ocuro: #343842;
+--main-gris-oscuro: #343842;
 --main-stronge-orange:#FF9E00;
 --main-light-blue: #24a3fa;
 }
@@ -61,7 +61,7 @@ body{
 
 .nav-link{
     text-decoration: none;
-    color: var(--main-gris-ocuro);
+    color: var(--main-gris-oscuro);
     height: 60px;
 }
 
@@ -112,7 +112,7 @@ body{
 /*buscador*/
 
 .searchContainer{
-    background-color: var(--main-gris-ocuro);
+    background-color: var(--main-gris-oscuro);
     width: auto;
     height: 300px;
     color: #e6e6e6;
@@ -142,12 +142,37 @@ body{
 }
 
 .containTop{
-    height: 400px;
     background: linear-gradient(to bottom,#0361A0, var(--main-light-blue));
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+
+.topContainer{
+    height: 400px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.topH2{
+    color: var(--main-stronge-orange);
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+.topImg{
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+    border: 3px white solid;
+    
 }
 
 @media (max-width: 768px){
